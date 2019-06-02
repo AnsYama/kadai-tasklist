@@ -2,6 +2,7 @@
 
 <p>（タスク名）<%= @task.title %></p>
 <p>（ 詳　細 ）<%= @task.content %></p>
+<p>（Status）<%= @task.status %></p>
 
 <p><%= link_to '編集', edit_task_path(@task) %></p>
 <p><%= link_to '削除', @task, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %></p>
